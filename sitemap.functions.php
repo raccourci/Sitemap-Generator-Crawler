@@ -367,18 +367,20 @@ function scan_url($url)
         $url = str_replace("&", "&amp;", $url);
     }
 
-    $map_row = "<url>\n";
-    $map_row .= "<loc>$url</loc>\n";
-    if ($enable_frequency) {
-        $map_row .= "<changefreq>$freq</changefreq>\n";
-    }
-    if ($enable_priority) {
-        $map_row .= "<priority>$priority</priority>\n";
-    }
-    if (!empty($modified)) {
-        $map_row .= "   <lastmod>$modified</lastmod>\n";
-    }
-    $map_row .= "</url>\n";
+    //$map_row = "<url>\n";
+    //$map_row .= "<loc>$url</loc>\n";
+    //if ($enable_frequency) {
+    //    $map_row .= "<changefreq>$freq</changefreq>\n";
+    //}
+    //if ($enable_priority) {
+    //    $map_row .= "<priority>$priority</priority>\n";
+    //}
+    //if (!empty($modified)) {
+    //    $map_row .= "   <lastmod>$modified</lastmod>\n";
+    //}
+    //$map_row .= "</url>\n";
+    
+    $map_row .= $url . "\n";
     fwrite($file_stream, $map_row);
     $indexed++;
     logger("Added: " . $url . ((!empty($modified)) ? " [Modified: " . $modified . "]" : ''), 0);
