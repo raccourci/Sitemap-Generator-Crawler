@@ -380,7 +380,7 @@ function scan_url($url)
     //}
     //$map_row .= "</url>\n";
     
-    $map_row .= $url . "\n";
+    $map_row = $url . "\n";
     fwrite($file_stream, $map_row);
     $indexed++;
     logger("Added: " . $url . ((!empty($modified)) ? " [Modified: " . $modified . "]" : ''), 0);
