@@ -70,12 +70,7 @@ $index_pdf = true;
 $crawler_user_agent = "Mozilla/5.0 (compatible; Sitemap Generator Crawler; +https://github.com/knyzorg/Sitemap-Generator-Crawler)";
 
 // Header of the sitemap.xml
-$xmlheader ='<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">';
+$xmlheader ='';
 
 // Optionally configure debug options
 $debug = array(
