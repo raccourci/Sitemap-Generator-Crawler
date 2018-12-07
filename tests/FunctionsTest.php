@@ -4,7 +4,6 @@ require_once(__DIR__.'/../sitemap.functions.php');
 
 class FunctionsTest extends \PHPUnit_Framework_TestCase
 {
-
     public function test_ends_with_validCase()
     {
         $this->assertTrue(ends_with('foobar', 'bar'));
@@ -51,7 +50,4 @@ class FunctionsTest extends \PHPUnit_Framework_TestCase
         $this->assertTrue(is_scanned('http://example.com/without'));
         $this->assertTrue(is_scanned('http://example.com/without/'));
     }
-
-
 }
-

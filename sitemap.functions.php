@@ -220,7 +220,6 @@ function get_data($url)
 
         if (!check_blacklist($redirect_url)) {
             echo logger("Redirected URL is in blacklist", 1);
-
         } else {
             scan_url($redirect_url);
         }

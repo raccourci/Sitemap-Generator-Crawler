@@ -1,6 +1,6 @@
 <?php
 /*
-Sitemap Generator by Slava Knyazev. Further acknowledgements in the README.md file. 
+Sitemap Generator by Slava Knyazev. Further acknowledgements in the README.md file.
 
 Website: https://www.knyz.org/
 I also live on GitHub: https://github.com/knyzorg
