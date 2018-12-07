@@ -100,7 +100,6 @@ if ($real_site != $site) {
 scan_url($real_site);
 
 // Finalize sitemap
-fwrite($file_stream, "</urlset>\n");
 fclose($file_stream);
 
 // Pretty-print sitemap
