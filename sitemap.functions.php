@@ -330,6 +330,8 @@ function scan_url($url)
     global $scanned, $deferredLinks, $file_stream, $freq, $priority, $enable_modified, $enable_priority, $enable_frequency, $max_depth, $depth, $real_site, $indexed;
     $depth++;
 
+    $url = trim($url);
+
     logger("Scanning $url", 2);
     if (is_scanned($url)) {
         logger("URL has already been scanned. Rejecting.", 1);
@@ -346,7 +348,7 @@ function scan_url($url)
 
     //Note that URL has been scanned
     $scanned[$url] = 1;
-    
+
     //Send cURL request
     list($html, $modified, $is_image) = get_data($url);
 
@@ -378,7 +380,7 @@ function scan_url($url)
     //    $map_row .= "   <lastmod>$modified</lastmod>\n";
     //}
     //$map_row .= "</url>\n";
-    
+
     $map_row = $url . "\n";
     fwrite($file_stream, $map_row);
     $indexed++;
