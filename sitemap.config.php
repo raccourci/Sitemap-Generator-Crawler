@@ -67,7 +67,7 @@ $index_img = false;
 $index_pdf = true;
 
 // Set the user agent for crawler
-$crawler_user_agent = "Mozilla/5.0 (compatible; Sitemap Generator Crawler; +https://github.com/knyzorg/Sitemap-Generator-Crawler)";
+$crawler_user_agent = "Mozilla/5.0 (compatible ; Googlebot/2.1 ; +http://www.google.com/bot.html)";
 
 // Header of the sitemap.xml
 $xmlheader = '';
