@@ -47,7 +47,7 @@ $priority = "1";
 $enable_modified = false;
 
 // Disable this for misconfigured, but tolerable SSL server.
-$curl_validate_certificate = true;
+$curl_validate_certificate = false;
 
 // The pages will be excluded from crawl and sitemap.
 // Use for exluding non-html files to increase performance and save bandwidth.
@@ -70,13 +70,13 @@ $index_pdf = true;
 $crawler_user_agent = "Mozilla/5.0 (compatible; Sitemap Generator Crawler; +https://github.com/knyzorg/Sitemap-Generator-Crawler)";
 
 // Header of the sitemap.xml
-$xmlheader ='';
+$xmlheader = '';
 
 // Optionally configure debug options
 $debug = array(
     "add" => true,
-    "reject" => false,
-    "warn" => false
+    "reject" => true,
+    "warn" => true
 );
 
 
