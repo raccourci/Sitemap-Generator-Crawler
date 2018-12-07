@@ -75,8 +75,8 @@ $xmlheader = '';
 // Optionally configure debug options
 $debug = array(
     "add" => true,
-    "reject" => true,
-    "warn" => true
+    "reject" => false,
+    "warn" => false
 );
 
 
