@@ -346,6 +346,26 @@ function scan_url($url)
         return $depth--;
     }
 
+    // Hack Blacklist
+    $blacklist = [
+        '?',
+        '%',
+        '/node',
+        'medias-tourisme',
+        'print',
+        'forward',
+        'facet',
+        'textsize',
+        '(mode)',
+        '(offset)',
+    ];
+    foreach ($blacklist as $word) {
+        if (strpos($url, $word) !== false) {
+            logger("Blacklist " . $word, 1);
+            return $depth--;
+        }
+    }
+
     //Note that URL has been scanned
     $scanned[$url] = 1;
 
