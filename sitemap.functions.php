@@ -358,6 +358,8 @@ function scan_url($url)
         'textsize',
         '(mode)',
         '(offset)',
+        '(mois)',
+        '(annee)',
     ];
     foreach ($blacklist as $word) {
         if (strpos($url, $word) !== false) {
