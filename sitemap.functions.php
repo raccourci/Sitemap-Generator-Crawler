@@ -362,6 +362,7 @@ function scan_url($url)
         '(annee)',
         '(sort)',
         '(sortBy)',
+        '(duree)',
     ];
     foreach ($blacklist as $word) {
         if (strpos($url, $word) !== false) {
