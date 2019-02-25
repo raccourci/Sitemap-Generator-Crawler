@@ -360,6 +360,8 @@ function scan_url($url)
         '(offset)',
         '(mois)',
         '(annee)',
+        '(sort)',
+        '(sortBy)',
     ];
     foreach ($blacklist as $word) {
         if (strpos($url, $word) !== false) {
