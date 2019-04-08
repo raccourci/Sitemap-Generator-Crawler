@@ -356,6 +356,7 @@ function scan_url($url)
         'forward',
         'facet',
         'textsize',
+        'clearsearch',
         '(mode)',
         '(offset)',
         '(mois)',
